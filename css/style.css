@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bree+Serif&family=Josefin+Sans&family=K2D&family=Open+Sans&family=Poppins&family=Roboto&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+
+.employeeContainer {
+    width: 100%;
+    height: 100vh;
+}
+.details {
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.recentUsers::-webkit-scrollbar {
+    width: 0px;
+}
+.details .recentUsers {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+    min-height: 500px;
+    overflow: scroll;
+}
+
+
+.recentUsers .cardHeader {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+    color: #287bff;
+}
+
+.cardHeader .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: #287bff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.details table thead {
+    font-weight: 600;
+}
+
+.details table thead tr {
+    color: #222;
+    padding: 20px 0 0 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentUsers table tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentUsers table tbody tr:hover {
+    background: #287bff;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.details .recentUsers table tbody tr ion-icon {
+    color: #000;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+    margin: 0 0 0 10px;
+}
+
+.details .recentUsers table tbody tr:hover ion-icon {
+    color: #fff !important;
+    transition: .3s ease-in-out;
+}
+
+.details .recentUsers table tr td {
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.userForm input[type=text]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.userForm label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.userForm .changebutton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 10px 0;
+}
+
+/* .userContainer table th:nth-child(2)
+{
+    text-align: left;
+} */
+
+.readName {
+    text-align: center;
+}
+
+.readName .userImage {
+    position: absolute;
+    transform: translateX(5rem);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.userName {
+    padding: 10px 15px;
+}
+
